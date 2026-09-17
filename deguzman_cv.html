@@ -15,17 +15,33 @@
         }
 
         .cv {
-            width: 800px;
+            max-width: 800px;
             margin: 30px auto;
             background: white;
             padding: 40px;
             box-shadow: 0 0 10px #ccc;
         }
 
+        /* HEADER */
         .header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 25px;
             border-bottom: 2px solid #333;
             padding-bottom: 20px;
+        }
+
+        /* PROFILE PICTURE */
+        .profile-picture {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+
+        .header-info {
+            flex: 1;
         }
 
         .header h1 {
@@ -73,6 +89,29 @@
             margin: 5px;
             border-radius: 4px;
         }
+
+    
+        @media (max-width: 700px) {
+
+            .cv {
+                margin: 0;
+                padding: 25px;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+            }
+        }
     </style>
 </head>
 
@@ -81,73 +120,151 @@
 <div class="cv">
 
     <div class="header">
-        <h1>De Guzman Clyde Allen C.</h1>
-        <p>ComSec Student</p>
-        <p>Email: clcu.deguzman.up@phinmaed.com | Phone: 0912-345-6789</p>
-        <p>Location: San Carlos Philippines</p>
+
+        <!-- PROFILE PICTURE -->
+        <img
+            src="profile.jpg"
+            alt="Clyde Allen De Guzman"
+            class="profile-picture"
+        >
+
+        <div class="header-info">
+            <h1>De Guzman Clyde Allen C.</h1>
+
+            <p>ComSec Student</p>
+
+            <p>
+                Email: clcu.deguzman.up@phinmaed.com |
+                Phone: 0912-345-6789
+            </p>
+
+            <p>Location: San Carlos, Philippines</p>
+        </div>
+
     </div>
 
-    <section>
-        <h2>Profile</h2>
-        <p>
-            Motivated and hardworking individual with an interest in Cyber security
-            development and computer technology. Able to learn new skills
-            quickly and work effectively with others.
-        </p>
-    </section>
 
     <section>
+
+        <h2>Profile</h2>
+
+        <p>
+            Motivated and hardworking individual with an interest in
+            cybersecurity development and computer technology.
+            Able to learn new skills quickly and work effectively with others.
+        </p>
+
+    </section>
+
+
+    <section>
+
         <h2>Education</h2>
 
         <div class="job">
+
             <h3>Bachelor of Science in Information Technology</h3>
-            <p>Phinma Upang</p>
-            <p class="date">2022 - 2026</p>
+
+            <p>PHINMA University of Pangasinan</p>
+
+            <p class="date">
+                2022 - 2026
+            </p>
+
         </div>
+
     </section>
 
+
     <section>
+
         <h2>Work Experience</h2>
 
         <div class="job">
-            <h3>Web developer</h3>
-            <p>bater Company</p>
-            <p class="date">2025 - Present</p>
+
+            <h3>Web Developer</h3>
+
+            <p>Bater Company</p>
+
+            <p class="date">
+                2025 - Present
+            </p>
 
             <ul>
-                <li>Created and maintained basic websites.</li>
-                <li>Worked with HTML, CSS, and JavaScript.</li>
-                <li>Fixed website layout and functionality issues.</li>
+
+                <li>
+                    Created and maintained basic websites.
+                </li>
+
+                <li>
+                    Worked with HTML, CSS, and JavaScript.
+                </li>
+
+                <li>
+                    Fixed website layout and functionality issues.
+                </li>
+
             </ul>
+
         </div>
+
 
         <div class="job">
+
             <h3>IT Intern</h3>
-            <p>rene Solutions</p>
-            <p class="date">2024 - 2025</p>
+
+            <p>Rene Solutions</p>
+
+            <p class="date">
+                2024 - 2025
+            </p>
 
             <ul>
-                <li>Assisted with computer and software support.</li>
-                <li>Helped maintain company websites.</li>
+
+                <li>
+                    Assisted with computer and software support.
+                </li>
+
+                <li>
+                    Helped maintain company websites.
+                </li>
+
             </ul>
+
         </div>
+
     </section>
 
+
     <section>
+
         <h2>Skills</h2>
 
         <div class="skills">
+
             <span>HTML</span>
+
             <span>CSS</span>
+
             <span>JavaScript</span>
+
             <span>Communication</span>
+
             <span>Problem Solving</span>
+
         </div>
+
     </section>
 
+
     <section>
+
         <h2>References</h2>
-        <p>Available upon request.</p>
+
+        <p>
+            Available upon request.
+        </p>
+
     </section>
 
 </div>
